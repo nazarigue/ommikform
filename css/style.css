@@ -97,7 +97,7 @@ body{
     }
 }
 
-@media (min-width: 768px){
+@media (max-width: 991px){
    
     .image-side  .hv-100{
         height: 60vh;
