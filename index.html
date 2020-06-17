@@ -40,6 +40,29 @@
     <title>Ommik | tehnoloogia uudiskiri</title>
   </head>
   <body>
+
+<script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '681527515757779',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v7.0'
+      });
+        
+      FB.AppEvents.logPageView();   
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+
     <div class="container-fluid">
         <div class="row justify-content-center d-md-flex align-items-center wrapper">
             <div class="col-md-6 col-xl-6 col-lg-6 form-size">
@@ -58,7 +81,7 @@
                             <input type="email" id="email" name="email" type="text" placeholder="siseta e-mail" class="subscription-email" name='email'> <br />
 
                                                    
-                            <input type="submit" name="commit" value="PROOVI" class="subscription-submit">
+                            <input onclick='FB.AppEvents.logEvent("buttonClicked")' type="submit" name="commit" value="PROOVI" class="subscription-submit">
                             </form>
                         
 
