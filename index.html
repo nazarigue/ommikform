@@ -24,12 +24,41 @@
                         <h2 class="font-weight-bold landing-header mx-4 mb-4">Ole kursis tehnoloogiauudistega 5 minutiga. </h2>
                         <h3 class="landing-subheader mx-4">Saa erialaspetsialistide poolt kokku pandud uudiskirja AI, meditsiini, küberkuritegevuse ja teistest valdkondadest. Tasuta.</h3>
                         <!-- <form class="subscription-form" id="subscription-email-form"  action="https://getsimpleform.com/messages?form_api_token=5eda85136e0ce8dc79ce8b8a66d18d6f" method="post">  -->
-                        <form action="https://liveformhq.com/form/2ffc5c6a-1ab5-449a-ab4a-fec28ae4b750" method="POST" accept-charset="utf-8" class="subscription-form" id="subscription-email-form">
-                            <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-                            <input type='hidden' name='redirect_to' value='https://eloquent-pare-15398d.netlify.app/thank-you.html' />                          
-                            <input type="text" splaceholder="siseta e-mail" class="subscription-email" name='email'>                        
+                        <form action="https://liveformhq.com/form/2ffc5c6a-1ab5-449a-ab4a-fec28ae4b750" method="POST" accept-charset="utf-8"  class="subscription-form" id="subscription-email-form" role=form>
+                            
+                            <input type="hidden" name="_utf8" value="✓">
+                            
+                            <input type="hidden" name="_redirect" value="https://eloquent-pare-15398d.netlify.app/thank-you.html">
+                            <!-- <label for="email">Email</label> -->
+                            <input type="text" id="email" name="email" type="text" placeholder="siseta e-mail" class="subscription-email" name='email'> <br />
+
+                            <!-- <div class='form-group'>
+                            <label for="name">Name</label>
+                            <input class='form-control' type="text" id="name" name="name">
+                            </div>
+                            
+                            <div class='form-group'>
+                            <label for="email">Email</label>
+                            <input class='form-control' type="text" id="email" name="email">
+                            </div>
+                            
+                            <div class='form-group'>
+                            <label for="message">Message</label>
+                            <textarea class='form-control' id="message" name="message"></textarea>
+                            </div> -->
+                                                   
                             <input type="submit" name="commit" value="PROOVI" class="subscription-submit">
-                        </form>
+                            <!-- <button type="submit">Submit</button> -->
+                            </form>
+                        
+                        
+                        
+                            <!-- <form action="https://liveformhq.com/form/2ffc5c6a-1ab5-449a-ab4a-fec28ae4b750" method="POST" accept-charset="utf-8" class="subscription-form" id="subscription-email-form">
+                           
+                            <input type='hidden' name='redirect_to' value='https://eloquent-pare-15398d.netlify.app/thank-you.html' />                          
+                            <input type="text" placeholder="siseta e-mail" class="subscription-email" name='email'>                        
+                            <input type="submit" name="commit" value="PROOVI" class="subscription-submit">
+                        </form> -->
                     </div>
                 </div>
             </div>
